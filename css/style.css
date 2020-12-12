@@ -1,0 +1,159 @@
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* color uses :Hex code: #f3ca20 and #000000
+
+/* main style */
+html,body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+     text-decoration: none;
+ }
+
+/* repeated styles */
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.bg-dark{
+    background-color: #15171a;
+    color: white;
+    
+}
+
+.bg-light{
+    background-color: gainsboro;
+    color: #15171a;
+}
+
+.text-primary{
+    color:#f3ca20 ;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.l-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+.m-heading{
+    font-size: 2rem;
+}
+.lead {
+    font-size: 1.6rem;
+}
+.btn {
+    background-color: #f3ca20;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+
+}
+.btn:hover{
+    background-color: #f3c92079;
+}
+/* navbar */
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#navbar .logo img{
+    width: 80px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 1rem;
+}
+
+#navbar ul li a:hover {
+    background-color: #f3ca20;
+}
+
+.box-shadow {
+    box-shadow: 0 0 3px #15171a;
+}
+/* showcase */ 
+
+#showcase{
+    background: #15171a url(../img/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+
+    background-color: rgb(0, 0, 0,0.8);
+
+}
+
+/* section : about */ 
+#about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+#about .about-content div, #about .about-content img {
+    flex: 1;
+}
+
+#about .about-content img {
+    width: 50%;
+    margin-left: 1.5rem;
+    border: 5px solid white;
+}
+
+/* section : cta */ 
+#cta {
+    background: url(../img/cta.jpg) no-repeat center center/cover;
+    color: white;
+}
+
+#cta .cta-content{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,0.6);
+    padding: 6rem;
+}
+#cta .cta-content p {
+    margin-bottom: 1.5rem;
+}
