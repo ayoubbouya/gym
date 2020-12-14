@@ -54,6 +54,10 @@ a {
 .py-1 {
     padding: 1.5rem 0;
 }
+
+.p-1{
+    padding: 1.5rem;
+}
 .m-heading{
     font-size: 2rem;
 }
@@ -164,4 +168,48 @@ a {
 
 #programs .boxes {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#programs .boxes .box{
+    flex: 1;
+    padding: 1rem;
+}
+
+#programs .boxes .box img {
+    width: 70px;
+    background-color: #f3ca20;
+    padding: 0.6rem;
+    border-radius: 100%;
+}
+
+/* trainers */ 
+
+#trainers .trainers-boxes  {
+    display: flex;
+}
+#trainers .trainers-boxes .trainer-box{
+    background-color: white;
+    flex: 1;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#trainers .trainers-boxes .trainer-box img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#trainers .trainers-boxes .trainer-box ul {
+    display: flex;
+    list-style: none;
+}
+
+#trainers .trainers-boxes .trainer-box ul li a {
+    color: #15171a;
+    margin-right: 10px;
+}
+#trainers .trainers-boxes .trainer-box ul li a:hover{
+    color: #f3ca20;
 }
