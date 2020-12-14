@@ -1,166 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Gym</title>
-    <!--main style -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!--mobile style -->
-    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:768px)">
-    <!--widescreen style -->
-    <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width:1100px)">
-    <!--font awsome -->
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"> 
-</head>
-<body id="home">
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* color uses :Hex code: #f3ca20 and #000000
+
+/* main style */
+html,body{
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+     text-decoration: none;
+ }
+
+/* repeated styles */
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.bg-dark{
+    background-color: #15171a;
+    color: white;
     
-    <nav id="navbar" class="bg-dark">
-        <div class="logo">
-          <a href="#home"> <img src="./img/logo.png" alt="logo"></a>
-        </div>
+}
+.bg-primary {
+    background-color: #15171a;
+    color: white;
+}
+.bg-light{
+    background-color: rgb(236, 236, 236);
+    color: #15171a;
+}
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#trainers">Trainers</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- showcase -->
-    <section id="showcase" class="text-center">
-        <div class="showcase-content">
-            <h1 class="l-heading py-1">work harder, get stronger <br> easy with our <span class="text-primary">gym</span></h1>
-            <a href="#contact" class="btn">become a member</a>
-        </div>
-    </section>
-    <!-- About -->
-    <section id="about" class="bg-light">
-        <div class="container">
-            <h2 class="m-heading text-center py-1">Hello, We are the <span class="text-primary">GYM</span></h2>
-                <div class="about-content">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, temporibus, voluptatibus debitis fugit incidunt accusamus repudiandae exercitationem amet officiis repellendus fugiat ex excepturi accusantium. Aspernatur, nesciunt? Quo reiciendis neque expedita eveniet perferendis iste consectetur quod suscipit, maxime, iure dolores labore?</p>
-                        <br><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugiat tempora veniam similique, quo libero tempore voluptate quos culpa illum, ducimus ad exercitationem assumenda ipsa.</p>
-                    </div>
-                    <img class="box-shadow" src="./img/about-us.jpg" alt="About Us">
-                </div>
-          </div>
-    </section>
-    <!-- CTA -->
-    <section id="cta" class="text-center">
-        <div class="cta-content">
-            <h1 class="l-heading">don't <span class="text-primary">Think</span>, Begin <span class="text-primary">Today</span>!</h1>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit maxime optio deleniti libero nisi adipisci veniam quis. Veniam quidem perspiciatis dolores et maxime perferendis?</p>
-            <a href="#contact" class="btn">Become A Member</a>
-        </div>
-    </section>
-    <!-- programs -->
-<section id="programs" class="text-center">
-        <h2 class="m-heading text-center py-1">our <span class="text-primary">Programs</span> </h2>
-    <div class="container">
-        <div class="boxes">
-            <div class="box">
-                <img src="./img/Fitness-icon.png" alt="basic fitness">
-                <div>
-                    <h3>Basic fitness</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, reprehenderit.</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/BodyBuilding-icon.png" alt="Body Building">
-                <div>
-                    <h3>Body Building</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, reprehenderit.</p>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/yoga-icon.png" alt="Yoga Training">
-                <div>
-                    <h3>Yoga Training</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, reprehenderit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- section: trainers  -->
-<section id="trainers" class="bg-light">
-    <h2 class="m-heading text-center py-1">Expert <span class="text-primary">Trainers</span></h2>
-    <div class="container">
-        <div class="trainers-boxes">
-            <div class="trainer-box box-shadow p-1">
-                <img src="./img/trainer-1.jpg " alt="trainer 1">
-                <span class="text-primary">Strength Trainer</span>
-                <h4>Ivan Samkov</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, nemo.</p>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+.text-primary{
+    color:#f3ca20 ;
+   
+}
 
-                </ul>
-            </div>
+.text-center {
+    text-align: center;
+    text-transform: capitalize;
+}
 
-            <div class="trainer-box box-shadow p-1">
-                <img src="./img/trainer-2.jpg " alt="trainer 2">
-                <span class="text-primary">Yoga Trainer</span>
-                <h4>Elena Nada</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, nemo.</p>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+.l-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
 
-                </ul>
-            </div>
+.py-1 {
+    padding: 1.5rem 0;
+}
 
-            <div class="trainer-box box-shadow p-1">
-                <img src="./img/trainer-3.jpg " alt="trainer 3">
-                <span class="text-primary">Bodybuilding Trainer</span>
-                <h4>John Doe</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, nemo.</p>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+.p-1{
+    padding: 1.5rem;
+}
+.m-heading{
+    font-size: 2rem;
+}
+.lead {
+    font-size: 1.6rem;
+}
+.btn {
+    background-color: #f3ca20;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+     
 
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- contact -->
-<section id="contact">
-    <div class="contact-us p-1 bg-primary">
-        <h2 class="m-heading py-1">Feel Free to ask anything</h2>
-        <form>
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-            </div>
-            <div>
-                <input type="text" name="subject" placeholder="subject">
-                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-            <input value="Submit" type="submit" class="btn"> 
-        </form>
-    </div>
-    <div class="map"></div>
-</section>
-<!-- jquerry -->
-<footer class="bg-dark py-1 text-center">
-    Copyright &COPY; 2020, The GYM, All Rights Reserved
-</footer>
+}
+.btn:hover{
+    background-color: #f4f4f4;
+    color: #15171a;
+     
+     
+}
+/* navbar */
 
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
 
+#navbar .logo img{
+    width: 80px;
+}
 
-    <!-- jquerry -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-</body>
-</html>
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 1rem;
+}
+
+#navbar ul li a:hover {
+    background-color: #f3ca20;
+}
+
+.box-shadow {
+    box-shadow: 0 0 3px #15171a;
+}
+/* showcase */ 
+
+#showcase{
+    background: #15171a url(../img/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+
+    background-color: rgb(0, 0, 0,0.8);
+
+}
+
+/* section : about */ 
+#about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+#about .about-content div, #about .about-content img {
+    flex: 1;
+}
+
+#about .about-content img {
+    width: 50%;
+    margin-left: 1.5rem;
+    border: 5px solid white;
+}
+
+/* section : cta */ 
+#cta {
+    background: url(../img/cta.jpg) no-repeat center center/cover;
+    color: white;
+}
+
+#cta .cta-content{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,0.6);
+    padding: 6rem;
+}
+#cta .cta-content p {
+    margin: 2rem;
+}
+
+/* section programs */
+
+#programs .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#programs .boxes .box{
+    flex: 1;
+    padding: 1rem;
+}
+
+#programs .boxes .box img {
+    width: 70px;
+    background-color: #f3ca20;
+    padding: 0.6rem;
+    border-radius: 100%;
+}
+
+/* trainers */ 
+
+#trainers .trainers-boxes  {
+    display: flex;
+}
+#trainers .trainers-boxes .trainer-box{
+    background-color: white;
+    flex: 1;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#trainers .trainers-boxes .trainer-box img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#trainers .trainers-boxes .trainer-box ul {
+    display: flex;
+    list-style: none;
+}
+
+#trainers .trainers-boxes .trainer-box ul li a {
+    color: #15171a;
+    margin-right: 10px;
+}
+#trainers .trainers-boxes .trainer-box ul li a:hover{
+    color: #f3ca20;
+}
+
+/* section:contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .contact-us , #contact .map{
+    flex: 1;
+}
+
+#contact .contact-us input,#contact .contact-us textarea {
+    width: 100%;
+    padding: .5rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+#contact .contact-us .form-group{
+    display: flex;
+}
+
+#contact .contact-us .form-group input[type="text"]{
+    margin-right: 0.75rem;
+}
