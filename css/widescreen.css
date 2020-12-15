@@ -1,0 +1,12 @@
+/* section programs */
+ 
+
+#programs .boxes .box{
+    display: flex;
+    text-align: left;
+}
+
+#programs .boxes .box img{
+    align-self: center;
+    margin-right: .5rem;
+}
