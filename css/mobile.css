@@ -1,0 +1,85 @@
+
+/* repeated styles */
+.l-heading{
+    font-size: 2.3rem;
+    line-height: 1.2;
+}
+.lead{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+      
+}
+/* navbar */
+
+#navbar {
+    flex-direction: column;
+ 
+}
+#navbar .logo img{
+   margin-bottom: 1rem;
+    
+}
+#navbar ul {
+    margin-bottom: .5rem;
+}
+
+/* section : about */ 
+#about .about-content{
+    display: block;
+    text-align: center;
+}
+
+#about .about-content img{
+    width: 100%;
+    margin: 2rem 0 0 0 ;
+}
+
+/* section programs */
+
+#programs .boxes {
+    display: block;
+}
+
+#programs .boxes .box{
+     margin-top: 1rem;
+    
+}
+
+/* trainers */ 
+
+#trainers .trainers-boxes  {
+    display: block;
+}
+
+/* section:contact */
+
+#contact {
+    flex-direction: column;
+    height: 1000px;
+}
+
+#contact .contact-us .form-group input{
+    width: 49%;
+}
+
+@media (max-width:500px){
+     #navbar ul {
+         display: block;
+         text-align: center;
+          
+     }
+
+     #navbar ul li {
+         padding: 1rem;
+     }
+     #navbar .logo img{
+       
+        margin-left: 0rem;
+    }
+
+    #navbar {
+        position: static;
+    }
+}
