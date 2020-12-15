@@ -30,14 +30,19 @@ a {
     color: white;
     
 }
-
+.bg-primary {
+    background-color: #15171a;
+    color: white;
+    
+}
 .bg-light{
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(245, 245, 245);
     color: #15171a;
 }
 
 .text-primary{
     color:#f3ca20 ;
+    text-shadow: 1px 2px 3px white;
    
 }
 
@@ -66,21 +71,30 @@ a {
 }
 .btn {
     background-color: #f3ca20;
-    color: white;
+    color: black;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
+    font-weight: bold;
+     
 
 }
 .btn:hover{
-    background-color: #f3c92079;
+    background-color: #f4f4f4;
+    color: #15171a;
+     
+     
 }
+.pb-2{
+    padding-bottom: 2rem;
+}
+
 /* navbar */
 
 #navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: .6rem;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -88,6 +102,7 @@ a {
 
 #navbar .logo img{
     width: 80px;
+    margin-left: 1rem;
 }
 
 #navbar ul {
@@ -102,6 +117,8 @@ a {
 
 #navbar ul li a:hover {
     background-color: #f3ca20;
+    color: #15171a;
+    border-radius: 3px;
 }
 
 .box-shadow {
@@ -133,6 +150,10 @@ a {
     align-items: center;
     justify-content: center;
     padding-bottom: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    
+  
 }
 
 #about .about-content div, #about .about-content img {
@@ -144,6 +165,7 @@ a {
     margin-left: 1.5rem;
     border: 5px solid white;
 }
+ 
 
 /* section : cta */ 
 #cta {
@@ -212,4 +234,35 @@ a {
 }
 #trainers .trainers-boxes .trainer-box ul li a:hover{
     color: #f3ca20;
+}
+
+/* section:contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .contact-us , #contact #map{
+    flex: 1;
+}
+
+#contact .contact-us input,#contact .contact-us textarea {
+    width: 100%;
+    padding: .5rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+#contact .contact-us .form-group{
+    display: flex;
+     
+}
+
+
+#contact .contact-us .form-group input[type="text"]{
+    margin-right: 0.4rem;
+     
 }
